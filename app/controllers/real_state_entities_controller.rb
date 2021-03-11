@@ -46,6 +46,6 @@ class RealStateEntitiesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def real_state_entity_params
-      params.require(:real_state_entity).permit(:name, :type, :street, :external_number, :internal_number, :neighborhood, :city, :country, :rooms, :bathrooms, :comments)
+      params.require(:real_state_entity).permit(:name, :real_state_type, :street, :external_number, :internal_number, :neighborhood, :city, :country, :rooms, :bathrooms, :comments)
     end
 end
